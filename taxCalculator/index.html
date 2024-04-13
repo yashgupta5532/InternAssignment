@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax-Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Tax Calculator</h1>
+      <div class="form-container">
+        <div class="container">
+          <label for="annual-Income">
+            <p>
+              Enter Gross Annual Income
+              <i class="fa-solid fa-circle-question"></i>
+            </p>
+            <div style="display: flex; justify-content: space-between;">
+              <input
+                type="number"
+                id="annual-Income"
+                placeholder="Enter your annual income"
+              />
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+          </label>
+        </div>
+        <div class="container">
+          <label for="extra-Income">
+            <p>
+              Enter Extra Income
+              <i class="fa-solid fa-circle-question"></i>
+            </p>
+            <input
+              type="number"
+              id="extra-Income"
+              placeholder="Enter Extra Income From Other Sources"
+            />
+          </label>
+        </div>
+        <div class="container">
+          <label for="age-group">
+            <p>
+              Enter Age Group
+              <i class="fa-solid fa-circle-question"></i>
+            </p>
+            <select name="age-group" id="age-Group">
+              <option value="">Select Age Group</option>
+              <option value="below-40">&lt; 40</option>
+              <option value="40-to-60">≥ 40 &amp; &lt; 60</option>
+              <option value="above-60">≥ 60+</option>
+            </select>
+          </label>
+        </div>
+        <div class="container">
+          <label for="deduction">
+            <p>
+              Enter Total Applicable Deductions
+              <i class="fa-solid fa-circle-question"></i>
+            </p>
+            <input
+              type="number"
+              id="deduction-Amount"
+              placeholder="Add Total Applicable Deductions"
+            />
+          </label>
+        </div>
+        <button type="submit" id="button">Submit</button>
+      </div>
+      <div class="results">
+        Your Overall Income will Be 
+        <p class="" id="overAll-Income">Rs. 0</p>
+        <p>After tax Deductions</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
